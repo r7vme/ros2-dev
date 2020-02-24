@@ -18,7 +18,7 @@ RUN apt-get update && \
     apt-get install -y python3-vcstool \
                        python3-colcon-common-extensions \
                        wget \
-                       git \
+                       git-core \
     && rm -rf /var/lib/apt/lists/*
 COPY ./ros_entrypoint.sh /
 ENTRYPOINT ["/ros_entrypoint.sh"]
